@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install Devvit CLI
+      run: npm install -g @devvit/cli
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build project
+      run: devvit build
+
+    - name: Run lint (if you add linting later)
+      run: npm run lint || echo "No lint script defined"

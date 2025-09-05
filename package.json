@@ -1,0 +1,12 @@
+{
+  "name": "whisper-or-shout",
+  "version": "1.0.0",
+  "description": "A social experiment for Reddit: whisper or shout?",
+  "scripts": {
+    "build": "devvit build",
+    "dev": "devvit dev",
+    "lint": "eslint src/"
+  },
+  "keywords": ["reddit", "devvit", "hackathon", "social-experiment", "ugc"],
+  "license": "MIT"
+}

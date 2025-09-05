@@ -1,0 +1,11 @@
+name: whisper-or-shout
+version: 1.0.0
+description: A social experiment: Whisper (anonymous) or Shout (public)?
+author: u/YourRedditUsername
+main: src/main.jsx
+icon: public/icon.png
+permissions:
+  - storage
+  - comment
+  - post
+environment: web
