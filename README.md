@@ -91,7 +91,7 @@ whisper-or-shout/
   ```
 
   ### 2. Clone the repo
-  ```bash
+```bash
 git clone https://github.com/Trytonottry/whisper-or-shout.git
 cd whisper-or-shout
 ```
